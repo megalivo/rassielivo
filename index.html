@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta charset="UTF-8">
+		<title>Te amo Rassi</title>
+		<link rel="stylesheet" type="text/css" href="./css/format.css">
+	</head>
+
+	<body style="margin:0px">
+		<audio autoplay>
+			<source src="music/music.mp3" type="audio/mpeg">
+			Your browser does not support the audio.
+		</audio>
+		<canvas></canvas>
+		<div id="imgTxt">
+			<span id="Txt"></span> <br />
+			<span id="tmp"></span>
+			<img id="img" src="">
+		</div>
+		<div id="heartTxt">
+			<span id="clickMe">Toca el corazoncito</span>
+			<div id="heart">
+				<button id="button" onclick="play()"></button>
+			</div>
+		</div>
+		<div id="content">
+			<h2 id="together">Hemos estado juntos por</h2>
+			<div id="timer">
+				<b id="d"></b> Días 
+				<b id="h"></b> Horas
+				<b id="m"></b> Minutos
+				<b id="s"></b> Segundos
+			</div>
+		</div>
+
+    	<div id = "typeDiv">
+        	<span id="txt1"></span> <br />
+        	<span id="txt2"></span>
+    	</div>		
+
+		<script >
+			var ok = 0;
+			var flag = 1;
+			var myImage = document.getElementById("img");
+			var myTxt = document.getElementById("Txt");
+			var imageArray = ["pic/pic1.png", "pic/pic2.png", "pic/pic3.png", "pic/pic4.png", "pic/pic5.png", "pic/pic6.png", 
+			"pic/pic7.png", "pic/pic8.png", "pic/pic9.png", "pic/pic10.png", "pic/pic11.png", "pic/pic12.png", "pic/pic13.png",
+			"pic/pic14.png", "pic/pic15.png", "pic/pic16.png"];
+			var imageIndex = 0;
+			var txtArray = ["Me acuerdo de este dibujo, el dia que nos hicimos novios", "Para mi eres la mujer mas bella de todas <3", "Amo tu sonrisa, es como si iluminara mi alma cada vez que la veo",
+			 "Realmente valoro tus esfuerzos y lo que haces", "Quiero verte cumplir tus sueños y acompañarte en el proceso", "me gusta ser tu compañero y chismosear junto a ti", "Yo sé que algún día nos veremos presencialmente y podré abrazarte",
+			 "Es cierto que estar lejos es dificil, pero lo lograremos", "Deseo cuidarte, tenerte respeto y que te sientas segura conmigo", "Vamos a hacer muchas cosas románticas", "Adoro jugar videojuegos contigo", 
+			 "Disfruto de escuchar como hablas apasionadamente de algo que te gusta", "Aveces me haces reir cuando haces berrinche jsjsjs", "Te ves tierna cuando te pones nerviosa al decirte cosas lindas", "Realmente quiero que sigamos siendo pareja por mucho tiempo, quizas hasta esposos <3", "Esto es todo querida, espero que te haya gustado, te amo"];
+			 var len = imageArray.length;
+			var t = 0;
+		</script>
+		
+		<script type="text/javascript" src="./js/stars.js"></script>
+		<script type="text/javascript" src="./js/typeWriter.js"></script>
+		<script type="text/javascript" src="./js/date.js"></script>
+		<script type="text/javascript" src="./js/playImg.js"></script>
+	</body>
+</html>
